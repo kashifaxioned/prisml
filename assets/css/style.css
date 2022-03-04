@@ -281,8 +281,57 @@ h4{
   Header styling ends here
 =================================*/
 
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  feature styling starts here
+=================================*/
+
+.feature-section {
+  padding: 95px 0 84px;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.feature-section .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-info {
+  padding-right: 90px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
 
 
+
+.feature-list{
+  padding-right: 50px;
+  border-left: 1px solid #ccc;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.feature-list li{
+  margin: 30px 50px;
+  display: block;
+}
+
+.feature-list li:first-child{
+  margin-top: 0;
+}
+
+.feature-list li::before{
+  content: "\f00c";
+  margin-right: 16px;
+}
+
+
+/*=================================
+ feature styling ends here
+=================================*/
 
 
 /*media query starts*/
