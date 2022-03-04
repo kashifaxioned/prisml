@@ -333,6 +333,43 @@ h4{
  feature styling ends here
 =================================*/
 
+/*=================================
+  card styling starts here
+=================================*/
+
+.card-section{
+  padding-top: 60px;
+  padding-bottom: 85px;
+  background-color: #fafafa;
+}
+
+.card-section .wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  margin: 25px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  background-color: white;
+}
+
+.card-info{
+    padding: 0 50px;
+    align-self: center;
+}
+
+
+.card-section .wrapper > a{
+  align-self: center;
+}
+
+/*=================================
+  card styling ends here
+=================================*/
+
+
 
 /*media query starts*/
 /*media query for 995px starts here*/
