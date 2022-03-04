@@ -369,6 +369,75 @@ h4{
   card styling ends here
 =================================*/
 
+/*=================================
+  contact styling starts here
+=================================*/
+
+.contact-section{
+  padding: 84px 0;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.contact-section .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.queries{
+  padding-right: 90px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.contact-form{
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.contact-form input, .contact-form textarea{
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  margin: 34px 0;
+  font-size: 16px;
+}
+
+.contact-form textarea{
+  margin-top: 0;
+  flex-grow: 1;
+}
+
+.contact-btn{
+  margin-top: 0;
+}
+
+.links{
+  padding-right: 50px;
+  border-left: 1px solid #ccc;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.links li{
+  margin: 16px 50px;
+  display: block;
+}
+
+.contact-info a{
+  color: inherit;
+  font-size: 18px;
+}
+
+
+/*=================================
+  contact styling ends here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
 
 
 /*media query starts*/
