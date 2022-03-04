@@ -438,7 +438,20 @@ h4{
   main styling ends here
 =================================*/
 
+/*=================================
+  footer styling starts here
+=================================*/
 
+.footer-section{
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
