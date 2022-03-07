@@ -209,30 +209,46 @@ li {
   padding: 15px 40px;
   border-radius: 30px;
   border: 1px solid #83898a;
-  margin-top: 37px;
+  margin: 37px 0 20px;
   background-color: inherit;
   color: #666;
   font-size: 13px;
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
-
 }
 
-.uppercase{
-  text-transform: uppercase;
+.btn:hover{
+  background-color: #83898a;
+  color: #fff;
 }
 
-h2{
-  padding-bottom: 50px;
+.uppercase { text-transform: uppercase; }
+
+.font-icons::before{
+  font-family:'FontAwesome';
+  margin-right: 15px;
+  color: #49bd8b;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2 {
+  padding-bottom: 45px;
   color: #666;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
 }
 
-h4{
-  font-size: 16px;
-  line-height: 1.5;
+h3{
+  font-size: 20;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /*=================================
@@ -254,7 +270,6 @@ h4{
   padding-right: 90px;
   flex-basis: 0;
   flex-grow: 1;
-  font-size: 40px;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -266,7 +281,6 @@ h4{
   flex-basis: 0;
   flex-grow: 1;
   color: #b09bdc;
-  font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -300,34 +314,31 @@ h4{
 }
 
 .feature-info {
-  padding-right: 90px;
+  padding-right: 60px;
   flex-basis: 0;
   flex-grow: 1;
 }
 
-
-
-.feature-list{
+.feature-list {
   padding-right: 50px;
   border-left: 1px solid #ccc;
   flex-basis: 0;
   flex-grow: 1;
 }
 
-.feature-list li{
-  margin: 30px 50px;
+.feature-list li {
+  margin: 40px 0 40px 50px;
   display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
-.feature-list li:first-child{
+.feature-list li:first-child {
   margin-top: 0;
 }
 
-.feature-list li::before{
-  content: "\f00c";
-  margin-right: 16px;
-}
-
+.feature-list li::before { content: "\f00c"; }
 
 /*=================================
  feature styling ends here
@@ -337,32 +348,37 @@ h4{
   card styling starts here
 =================================*/
 
-.card-section{
-  padding-top: 60px;
-  padding-bottom: 85px;
+.card-section {
+  padding: 60px 0 85px;
   background-color: #fafafa;
 }
 
-.card-section .wrapper{
+.card-section .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.card{
+.card {
   margin: 25px 0;
   border-bottom: 1px solid #ccc;
   display: flex;
-  background-color: white;
+  justify-content: flex-start;
+  background-color: #fff;
 }
 
-.card-info{
-    padding: 0 50px;
-    align-self: center;
+.card img{
+  height: 100%;
+  width: 100%;
 }
 
-
-.card-section .wrapper > a{
-  align-self: center;
+.card-info {
+  padding: 0 50px;
+  margin: 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /*=================================
@@ -373,62 +389,81 @@ h4{
   contact styling starts here
 =================================*/
 
-.contact-section{
+.contact-section {
   padding: 84px 0;
   border-bottom: 0.5px solid #ccc;
 }
 
-.contact-section .wrapper{
+.contact-section .wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.queries{
+.queries {
   padding-right: 90px;
   flex-basis: 0;
   flex-grow: 1;
 }
 
-.contact-form{
+.contact-form {
   margin: 10px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.contact-form input, .contact-form textarea{
-  padding: 12px 20px;
+.contact-form input {
+  padding: 12px 10px;
   border: 1px solid #ccc;
   margin: 34px 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
-.contact-form textarea{
-  margin-top: 0;
-  flex-grow: 1;
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 34px;
+  float: left;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-.contact-btn{
+.contact-btn {
   margin-top: 0;
 }
 
-.links{
+.links {
   padding-right: 50px;
   border-left: 1px solid #ccc;
   flex-basis: 0;
   flex-grow: 1;
 }
 
-.links li{
-  margin: 16px 50px;
+.links li {
+  margin: 25px 0 25px 40px;
   display: block;
+  line-height: 1.7;
 }
 
-.contact-info a{
+.links li:nth-child(1)::before{ content: "\f099";}
+
+.links li:nth-child(2)::before{ content: "\f09a";}
+
+.links li:nth-child(3)::before{ content: "\f16d";}
+
+.links li:nth-child(4)::before{ content: "\f0e0";}
+
+.links li:nth-child(5)::before{ content: "\f015";}
+
+
+.contact-info a {
   color: inherit;
   font-size: 18px;
 }
-
 
 /*=================================
   contact styling ends here
@@ -437,12 +472,12 @@ h4{
 /*=================================
   main styling ends here
 =================================*/
-
 /*=================================
   footer styling starts here
+
 =================================*/
 
-.footer-section{
+.footer-section {
   padding: 70px 0;
   display: flex;
   justify-content: center;
@@ -454,5 +489,169 @@ h4{
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}  
+/*media query for 1280px starts here*/
+
+@media only screen and (max-width: 1280px) {
+ .contact-form .input{
+   width: 100%;
+ }
+
+ .contact-form input{
+  width: 100%;
+ }
+
+ .contact-form input:last-child{
+   margin-top: 0;
+ }
+
+}
+
+/*media query for 1280px ends here*/
+
+/*media query for 1024px starts here*/
+
+@media only screen and (max-width: 1024px) {
+  
+  .wrapper{
+    width: 80%;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+  
+  h4 {
+    font-size: 15px;
+  }
+  
+  .contact-info a {
+    font-size: 15px;
+  }
+
+  .feature-list li{
+    font-size: 15px;
+  }
+
+  .card img{
+    width: 110%;
+  }
+}
+/*media query for 1024px ends here*/
+
+/*media query for 768px starts here*/
+
+@media only screen and (max-width: 768px) {
+  
+  .btn{
+    padding: 15px 30px;
+    font-size: 12px;
+  }
+
+  .header-section .wrapper{
+    flex-direction: column;
+  }
+  .header-info{
+    border-left: 0;
+    border-top: 1px solid #b09bdc;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 0;
+  }
+}
+
+.feature-section .wrapper{
+  flex-direction: column;
+}
+
+.feature-list{
+  margin: 20px 0 0;
+  border-left: 0;
+  border-top: 1px solid #83898a;
+  padding-top: 30px;
+  padding-left: 0;
+}
+
+.feature-list li{
+  margin: 20px 0;
+}
+
+.card-section{
+  padding-bottom: 30px;
+}
+
+.card{
+  flex-direction: column;
+
+}
+
+.card img{
+  width: 100%;
+}
+
+.card-info{
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+
+.contact-section .wrapper{
+  flex-direction: column;
+}
+
+.links{
+  border-top: 1px solid #ccc;
+  border-left: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/*media query for 768px ends here*/
+
+/*media query for 320px starts here*/
+
+@media only screen and (max-width: 320px) {
+  
+  .btn{
+  padding: 10px 16px;
+  font-size: 10px;
+  }
+
+  .header-section{
+    padding: 100px 0 50px;
+  } 
+
+  .feature-info{
+    padding: 0;
+  }
+  
+  .queries{
+    padding: 0 10px;
+  }
+  
+  .links{
+    padding: 0;
+  }
+
+  .links li{
+    margin-left: 0;
+  }
+
+  .footer-section{
+    padding: 30px;
+  }
+
+  .footer-section h4{
+    font-size: 10px;
+  }
+/*media query for 320px ends here*/
+/*media query ends here*/
+
+}
